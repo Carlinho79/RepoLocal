@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Checkout code
         run: |
-          git echo "Hola mundo"
+          echo "Hola mundo"
         
