@@ -1,0 +1,15 @@
+name: Hola Mundo
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: # Permet activació manual
+
+jobs:
+log-commits:
+  runs-on: macos-latest
+  steps:
+    - name: Checkout code
+      run: |
+        git echo "Hola mundo"
+        
